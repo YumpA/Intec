@@ -1,0 +1,929 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+/*-----hat------*/
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.hat {
+    background-color: black;
+}
+
+.hat-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 120px;
+}
+
+.hat-menu-item {
+    margin-right: 5%;
+}
+
+.hat-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hat-menu-a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.login {
+    background-color: #194DD2;
+    padding: 5% 3% 4% 3%;
+    width: 41%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.login:hover,
+.login:focus {
+    background-color: rgb(1, 1, 158);
+    transition: background-color 0.3s ease;
+}
+.login:hover::after,
+.login:focus::after {
+    transform-origin: bottom;
+    transform: scaleY(1);
+    outline: none;
+}
+
+/*
+*/
+.big-btn {
+    cursor: pointer;
+    position: absolute;
+    width: 10%;
+    background-color: #194DD2;
+    border-color: #194DD2;
+    height: 1020px;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 4%;
+    transition: width 0.3s ease;
+}
+
+.big-btn:focus {
+    width: 25%;
+    transition: width 0.3s ease;
+}
+
+.arrow-img {
+    padding-right: 5%;
+}
+
+.move--right {
+    opacity: 0;
+}
+
+.big-btn:focus::after {
+    content: "Начни зарабатывать";
+    font-size: 36px;
+    color: white;
+}
+
+/*-----banner--------*/
+
+.banner {
+    background-color: black;
+}
+
+.background {
+    position: relative;
+    max-width: 1110px;
+    height: 900px;
+    background-image: url("../images/Baner.png");
+}
+
+.banner-items {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+.phrase {
+    font-size: 52px;
+    color: white;
+    width: 700px;
+    margin-bottom: 5%;
+}
+
+.appeal {
+    color: white;
+    font-size: 22px;
+    width: 500px;
+    margin-bottom: 10%;
+}
+
+.calc {
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+.calc-a {
+    display: inline-block;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 40px;
+    transition: background-color 0.3s ease;
+}
+
+.calc-a:hover,
+.calc-a:focus {
+    background-color: rgba(255, 255, 255, 0.329);
+    transition: background-color 0.3s ease;
+}
+
+/*-----aboutWork-----*/
+
+.aboutWork {
+    margin-bottom: 10%;
+}
+
+.howWeWork {
+    display: grid;
+    margin-top: 10%;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: repeat(4, 150px);
+    grid-gap: 23px;
+}
+
+.gallery {
+    background-color: #194DD2;
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+
+.gallery-item {
+    position: relative;
+    top: 60%;
+    left: 25%;
+    color: white;
+    font-size: 42px;
+}
+
+.gallery1 {
+    background-image: url("../images/Grid1.png");
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.gallery2 {
+    background-image: url("../images/Grid2.png");
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.aboutWork-info {
+    margin-left: 5%;
+    grid-row: 1/4;
+    grid-column: 3/5;
+}
+
+.abotwork-header {
+    font-size: 42px;
+}
+
+.aboutWork-text {
+    margin-top: 10%;
+    position: relative;
+    width: 400px;
+    font-size: 18px;
+}
+
+.signUp {
+    z-index: 1;
+    margin-top: 21%;
+    border-radius: 50px;
+    color: white;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.signUp-a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #194DD2;
+    background-color: #194DD2;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 60px;
+    transition: background-color 0.3s ease;
+}
+
+.signUp-a:hover,
+.signUp-a:focus {
+    background-color: rgb(1, 1, 158);
+    transition: background-color 0.3s ease;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutTechnologies {
+    margin: 0 20px;
+    width: 485px;
+    min-height: 358px;
+    -webkit-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+}
+
+.arrow {
+    width: 50px;
+    height: 45px;
+    background-image: url("../images/Arrow.png");
+}
+
+.technology-Name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+.technology-description {
+    font-size: 18px;
+    padding: 0 10% 10% 10%;
+}
+
+.listTechnology {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+}
+
+/*-----investments-----*/
+
+.investments {
+    background-color: #1A1A1A;
+}
+
+.investments-steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10% 0;
+}
+
+.start_invest {
+    display: flex;
+    flex-direction: column;
+}
+
+.codeImg {
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+    width: 30%;
+    height: 595px;
+    background-image: url("../images/CodeImage.png");
+}
+
+.phrase2 {
+    z-index: 2;
+    width: 380px;
+    color: white;
+    font-size: 52px;
+}
+
+.line {
+    width: 65px;
+    height: 2px;
+    margin: 10% 0 5% 0;
+    background-image: url("../images/Line.png");
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.step {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0;
+}
+
+.step-text {
+    margin-left: 5%;
+}
+
+.investments-number {
+    text-align: center;
+    border-radius: 100%;
+    background-color: white;
+    padding: 20px 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.investments-number:hover,
+.investments-number:focus {
+    background-color: #194DD2;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.investments-header {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.investments-text {
+    color: white;
+    font-size: 18px;
+}
+
+/*-----advantages----*/
+
+.advantages-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.things {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5% 0 0 0;
+}
+
+.thing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+
+.whyWe {
+    font-size: 18px;
+}
+
+.blue-line {
+    width: 65px;
+    height: 2px;
+    background-image: url("../images/BlueLine.png");
+    margin: 30px 0;
+}
+
+.phrase3 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.blue-line-small {
+    width: 36px;
+    height: 2px;
+    margin: 3% 0;
+    background-image: url("../images/BlueLineSmall.png");
+}
+
+.thing-icon {
+    width: 85px;
+    height: 85px;
+}
+
+.icon1 {
+    background-image: url("../images/Icon1.png");
+}
+
+.icon2 {
+    background-image: url("../images/Icon2.png");
+}
+
+.icon3 {
+    background-image: url("../images/Icon3.png");
+}
+
+.icon4 {
+    background-image: url("../images/Icon4.png");
+}
+
+.thing-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.thing-text {
+    font-size: 18px;
+    padding-left: 5%;
+    width: 400px;
+}
+
+.advantages-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages-calc {
+    margin-top: 10%;
+    border: 2px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    margin-left: 1%;
+}
+
+.advantages-a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    padding: 10px 60px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.advantages-a:hover,
+.advantages-a:focus {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.advantages-signUp {
+    margin-top: 10%;
+    border: 2px solid #194DD2;
+    border-radius: 50px;
+    background-color: #194DD2;
+    color: white;
+    font-size: 18px;
+}
+
+/*-------statistics--------*/
+
+.statistic {
+    margin-top: 5%;
+    width: 1400px;
+    height: 730px;
+    background-image: url("../images/Statistics.png");
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.statistics-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 15%;
+}
+
+.statistics-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.statistics-name {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+}
+
+.statistic-line {
+    margin: 5% 0;
+    width: 65px;
+    height: 2px;
+    background-image: url("../images/Line.png");
+}
+
+.data {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.long-line {
+    width: 250px;
+    margin: 1% 0;
+    height: 2px;
+    background-image: url("../images/whiteLine.png");
+}
+
+.figure {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+}
+
+.value {
+    font-size: 18px;
+    color: white;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.statistic-btn {
+    margin-top: 10%;
+    border: 2px solid #194DD2;
+    border-radius: 50px;
+    background-color: #194DD2;
+    color: white;
+    font-size: 18px;
+}
+
+.statisticp-a {
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #194DD2;
+    background-color: #194DD2;
+    border-radius: 50px;
+    color: white;
+    padding: 10px 60px;
+    transition: background-color 0.3s ease;
+}
+
+.statisticp-a:hover,
+.statisticp-a:focus {
+    background-color: rgb(1, 1, 158);
+    transition: background-color 0.3s ease;
+}
+
+.statistic-calc {
+    margin-top: 10%;
+    border: 2px solid white;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    margin-left: 1%;
+}
+
+.statistic-calc-a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 60px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.statistic-calc-a:hover {
+    background-color: rgba(255, 255, 255, 0.329);
+    transition: background-color 0.3s ease;
+}
+
+/*------startups------*/
+
+.startups-and-techlologies {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.startup-header {
+    margin: 0 auto;
+}
+
+.startup-header-small {
+    text-align: center;
+    font-size: 18px;
+}
+
+.black-line {
+    margin: 5% auto;
+    width: 65px;
+    height: 2px;
+    background-image: url("../images/BlackLine.png");
+}
+
+.startup-header-text {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.techs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.techArrow {
+    position: relative;
+    left: 30%;
+}
+
+.tech {
+    text-align: center;
+    padding: 5%;
+    -webkit-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+}
+
+.tech--active {
+    height: 280px;
+}
+
+.tech-header {
+    margin: 5% 0;
+    color: #194DD2;
+    font-size: 16px;
+}
+
+.tech-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subheading {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3% 0;
+}
+
+.startup-text {
+    position: relative;
+    width: 500px;
+    font-size: 18px;
+}
+
+.startup-header {
+    font-size: 42px;
+    padding-bottom: 5%;
+}
+
+.startup-signUp {
+    margin-top: 4%;
+    border: 2px solid #194DD2;
+    border-radius: 50px;
+    background-color: #194DD2;
+    color: white;
+    font-size: 18px;
+}
+
+.startup-gallery-item {
+    position: relative;
+    top: 60%;
+    left: 10%;
+    color: white;
+    font-size: 42px;
+}
+
+ .startup-gallery1 {
+    background-color: #194DD2;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.startup-gallery1_1 {
+    background-image: url("../images/startupGallery1_1.png");
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.startup-gallery1_2 {
+    background-image: url("../images/startupGallery1_2.png");
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.startup-gallery2 {
+    background-color: #194DD2;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.startup-gallery2_1 {
+    background-image: url("../images/startupGallery2_1.png");
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.startup-gallery2_2 {
+    background-image: url("../images/startupGallery2_2.png");
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+
+.startup-info {
+    margin-left: 5%;
+    grid-row: 1/4;
+    grid-column: 1/3;
+}
+
+.most-frequently {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.questions-header {
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.questions-answers {
+    padding-right: 4%;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+
+.question {
+    cursor: pointer;
+    padding: 5%;
+    -webkit-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 9px 51px -12px rgba(34, 60, 80, 0.2);
+}
+
+.question:nth-child(2) {
+    margin: 5% 0;
+}
+
+.question-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.question-header::after {
+    content: '\25BC';
+    font-size: 18px;
+    transition: tranform 0.3s ease;
+}
+
+.question-header--active::after {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.question-mark {
+    height: 30px;
+    width: 24px;
+    background-image: url("../images/Question.png");
+}
+
+.question-p {
+    font-size: 18px;
+    padding-left: 2%;
+    transition: transform 0.3s ease;
+}
+
+.answer {
+    overflow: hidden;
+    max-height: 0;
+    font-size: 18px;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    margin-top: 3%;
+}
+
+.answer--visible {
+    opacity: 1;
+}
+
+.question-main {
+    background-color: #194DD2;
+    width: 100%;
+    padding: 5%;
+}
+
+.question-main-header {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.question-main-answer {
+    font-size: 18px;
+    padding: 2% 0;
+    color: white;
+}
+
+/*-------footer-------*/
+
+.footer {
+    background-color: #1A1A1A;
+}
+
+.footer-info {
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation {
+    padding: 10% 0 5% 0;
+}
+
+.aboutTeam {
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    padding: 10% 0;
+}
+
+.footer-header {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.whiteLine {
+    width: 220px;
+    height: 1px;
+    background-image: url("../images/whiteLine.png");
+    margin: 10% 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
+}
+
+.footer-list:nth-child(2) {
+    margin: 0 40%;
+}
+
+.list-item {
+    list-style: none;
+    padding: 5% 0;
+}
+
+.list-item-a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone {
+    color:  white;
+    margin: 5% 0 10% 0;
+}
+
+.contact {
+    margin: 3% ;
+    color: white;
+}
